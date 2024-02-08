@@ -1,0 +1,43 @@
+{% schema %}
+{
+  "name": "Custom Product Block",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Your Custom Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Your custom text here"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Product Block",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+  /* Add your custom CSS here */
+  .custom-block {
+    text-align: center;
+    padding: 20px;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  // Add your custom JavaScript here
+  console.log('Custom Product Block loaded');
+{% endjavascript %}
+
+<div class="custom-block">
+  <h2>{{ section.settings.heading }}</h2>
+  <p>{{ section.settings.text }}</p>
+</div>
