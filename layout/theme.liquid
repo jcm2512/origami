@@ -280,6 +280,33 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+
+    {% comment %} @jcm2512 Parallax Effect {% endcomment %}
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const banners = document.querySelectorAll('.parallax-banner');
+
+        const applyParallax = () => {
+          banners.forEach((banner) => {
+            const rect = banner.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const bannerTop = rect.top + scrollTop;
+            const bannerHeight = rect.height;
+            const scrolled = scrollTop - bannerTop;
+            const parallaxSpeed = 0.5; // Adjust for desired effect intensity
+
+            if (scrollTop > bannerTop - window.innerHeight && scrollTop < bannerTop + bannerHeight) {
+              // Adjust the 'translateY' value to move the background at a different speed
+              banner.style.transform = `translate3d(0, ${scrolled * parallaxSpeed}px, 0)`;
+            }
+          });
+        };
+
+        window.addEventListener('scroll', applyParallax);
+        applyParallax(); // Apply once on load in case the banner is already in view
+      });
+    </script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
