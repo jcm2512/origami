@@ -343,6 +343,7 @@
 
 .footer-block__details-content .list-menu__item--link,
 .copyright__content a {
+  text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
 }
 
