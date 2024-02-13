@@ -12,32 +12,32 @@
             "menu": "main-menu"
           }
         },
-        "footer-0": {
-          "type": "link_list",
+        "text_fHNF8M": {
+          "type": "text",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "<strong>オンラインサービス<\/strong>",
+            "subtext": "<p>お支払い方法<\/p><p>配送方法<\/p><p>マイアカウント<\/p><p>返品について<\/p><p>ケア & サービス<\/p><p>FAQ<\/p><p>オンライン リペア<\/p>"
           }
         },
-        "footer-1": {
-          "type": "link_list",
+        "text_4Kn8PA": {
+          "type": "text",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "heading": "<strong>ブティックサービス<\/strong>",
+            "subtext": "<p>ブティック検索<\/p><p>ご来店予約<\/p><p>シャネル 銀座<\/p><p>シャネル 銀座並木<\/p><p>シャネル ファイン ジュエリー 銀座並木<\/p><p>ル サロン ボーテ<\/p><p>Chanel Nexus Hall<\/p><p>BEIGE Alain Ducasse Tokyo<\/p>"
           }
         },
         "footer-2": {
           "type": "text",
           "settings": {
             "heading": "<strong>THE HOUSE OF CHANEL<\/strong>",
-            "subtext": "<h5>採用情報<\/h5><h5>利用規約<\/h5><h5>プライバシーポリシー<\/h5><h5>社会への報告書<\/h5><h5>セールスポリシー<\/h5><h5>模倣品対策について<\/h5><h5>決算報告<\/h5>"
+            "subtext": "<p>採用情報<\/p><p>利用規約<\/p><p>プライバシーポリシー<\/p><p>社会への報告書<\/p><p>セールスポリシー<\/p><p>模倣品対策について<\/p><p>決算報告<\/p>"
           }
         }
       },
       "block_order": [
         "link_list_YEP4HC",
-        "footer-0",
-        "footer-1",
+        "text_fHNF8M",
+        "text_4Kn8PA",
         "footer-2"
       ],
       "settings": {
