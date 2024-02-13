@@ -55,9 +55,66 @@
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
+    },
+    "image_banner_MByhNj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_KbRAPM": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>オートクチュール<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "heading_9mA33J": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>2024 年春夏<\/strong>",
+            "heading_size": "h0"
+          }
+        },
+        "heading_acmmcp": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>SHOW<\/strong>",
+            "heading_size": "h0"
+          }
+        },
+        "buttons_Y8c9qc": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "詳細",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_KbRAPM",
+        "heading_9mA33J",
+        "heading_acmmcp",
+        "buttons_Y8c9qc"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1705337605766-homepagecorpoonedesktop26jpg.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
     }
   },
   "order": [
-    "image_banner"
+    "image_banner",
+    "image_banner_MByhNj"
   ]
 }
