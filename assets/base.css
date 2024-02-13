@@ -264,6 +264,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   font-weight: var(--font-body-weight);
 }
 
+.h-shadow{
+  text-shadow: 0 0 6px rbg(0 0 0 / 60%);
+}
+
 h1,
 h2,
 h3,
