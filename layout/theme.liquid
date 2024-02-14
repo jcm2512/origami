@@ -292,7 +292,7 @@
             const bannerTop = rect.top + scrollTop;
             const bannerHeight = rect.height;
             const scrolled = scrollTop - bannerTop;
-            const parallaxSpeed = 2.0; // Adjust for desired effect intensity
+            const parallaxSpeed = 0.5; // Adjust for desired effect intensity
 
             if (scrollTop > bannerTop - window.innerHeight && scrollTop < bannerTop + bannerHeight) {
               // Adjust the 'translateY' value to move the background at a different speed
