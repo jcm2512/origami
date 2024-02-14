@@ -294,9 +294,19 @@
             const scrolled = scrollTop - bannerTop;
             const parallaxSpeed = 0.5; // Adjust for desired effect intensity
 
-            if (scrollTop > bannerTop - window.innerHeight && scrollTop < bannerTop + bannerHeight) {
-              // Adjust the 'translateY' value to move the background at a different speed
-              banner.style.transform = `translate3d(0, ${scrolled * parallaxSpeed}px, 0)`;
+            // Threshold adjustment: modify these values to adjust when the effect starts
+            const startOffset = bannerHeight * 0.3; // Example: start the effect a bit after the banner is in view
+            const endOffset = window.innerHeight * 0.1; // Example: extend the effect a bit before the banner leaves view
+
+            if (
+              scrollTop > bannerTop - window.innerHeight + endOffset &&
+              scrollTop < bannerTop + bannerHeight - startOffset
+            ) {
+              // Adjust the 'translate3d' value to move the background at a different speed
+              banner.style.transform = `translate3d(0, ${(scrolled - endOffset) * parallaxSpeed}px, 0)`;
+            } else {
+              // Optionally reset the transform or adjust it to a default state
+              // banner.style.transform = 'translate3d(0, 0, 0)';
             }
           });
         };
