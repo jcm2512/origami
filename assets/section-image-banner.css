@@ -485,5 +485,9 @@
 .banner--parallax {
   /* Apply a scale transform directly in CSS */
   transform: scale(1.4);
-  transition: transform 0.2s ease-out; /* Smooths out the transition of the transform changes */
+  transition: transform 0.5s ease-out; /* Smooths out the transition of the transform changes */
+}
+
+.banner--parallax-container {
+  overflow: hidden;
 }
