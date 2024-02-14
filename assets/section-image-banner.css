@@ -481,3 +481,7 @@
     color: currentColor;
   }
 }
+
+.banner-parallax-container {
+  overflow:hidden;
+}
