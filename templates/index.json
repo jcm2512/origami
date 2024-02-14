@@ -90,7 +90,6 @@
         "heading_9mA33J",
         "buttons_Y8c9qc"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/1705337605766-homepagecorpoonedesktop26jpg.webp",
         "image_overlay_opacity": 0,
@@ -99,7 +98,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
