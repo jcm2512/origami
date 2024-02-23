@@ -104,24 +104,24 @@
         "show_text_below": false
       }
     },
-    "image_banner_PVyMfN": {
-      "type": "image-banner",
+    "image_banner_parallax_A3BbRc": {
+      "type": "image-banner-parallax",
       "blocks": {
-        "heading_T7rb9D": {
+        "heading_mzXDDk": {
           "type": "heading",
           "settings": {
             "heading": "<strong>ファッション<\/strong>",
             "heading_size": "h2"
           }
         },
-        "heading_GmYfa7": {
+        "heading_wecw7x": {
           "type": "heading",
           "settings": {
             "heading": "<strong>2024年春夏 プレコレクション<\/strong>",
             "heading_size": "h1"
           }
         },
-        "buttons_kJMJbj": {
+        "buttons_rtpeLE": {
           "type": "buttons",
           "settings": {
             "button_label_1": "詳細",
@@ -134,43 +134,42 @@
         }
       },
       "block_order": [
-        "heading_T7rb9D",
-        "heading_GmYfa7",
-        "buttons_kJMJbj"
+        "heading_mzXDDk",
+        "heading_wecw7x",
+        "buttons_rtpeLE"
       ],
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/1705337605766-homepagecorpoonedesktop26jpg.webp",
+        "image": "shopify:\/\/shop_images\/1706103945422-homepagecorpoonedesktopnoparallaxe5jpg.webp",
         "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "bottom-center",
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
-    "image_banner_kNCWn8": {
-      "type": "image-banner",
+    "image_banner_parallax_TmpBfp": {
+      "type": "image-banner-parallax",
       "blocks": {
-        "heading_VV9zpc": {
+        "heading_YMPYMF": {
           "type": "heading",
           "settings": {
             "heading": "<strong>ファッション<\/strong>",
             "heading_size": "h2"
           }
         },
-        "heading_CVDeRe": {
+        "heading_3LN8iY": {
           "type": "heading",
           "settings": {
             "heading": "<strong>2024年春夏 プレコレクション<\/strong>",
             "heading_size": "h1"
           }
         },
-        "buttons_XEEbFP": {
+        "buttons_RqXqLe": {
           "type": "buttons",
           "settings": {
             "button_label_1": "詳細",
@@ -183,30 +182,29 @@
         }
       },
       "block_order": [
-        "heading_VV9zpc",
-        "heading_CVDeRe",
-        "buttons_XEEbFP"
+        "heading_YMPYMF",
+        "heading_3LN8iY",
+        "buttons_RqXqLe"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/1705337605766-homepagecorpoonedesktop26jpg.webp",
         "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "bottom-center",
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
   "order": [
     "image_banner",
     "image_banner_MByhNj",
-    "image_banner_PVyMfN",
-    "image_banner_kNCWn8"
+    "image_banner_parallax_A3BbRc",
+    "image_banner_parallax_TmpBfp"
   ]
 }
