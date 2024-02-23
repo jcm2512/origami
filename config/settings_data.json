@@ -12,7 +12,7 @@
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
     "parallax_speed": 0.1,
-    "parallax_image_scale": 1,
+    "parallax_image_scale": 1.2,
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
