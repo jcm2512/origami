@@ -140,6 +140,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/1706103945422-homepagecorpoonedesktopnoparallaxe5jpg.webp",
+        "parallax_speed": 0.3,
+        "scale": 1.2,
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -188,6 +190,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/1705337605766-homepagecorpoonedesktop26jpg.webp",
+        "parallax_speed": 0.7,
+        "scale": 1.7,
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
