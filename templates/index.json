@@ -1,109 +1,5 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>オートクチュール<\/strong>",
-            "heading_size": "h2"
-          }
-        },
-        "heading_HH8LAh": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>2024 年春夏<\/strong>",
-            "heading_size": "h1"
-          }
-        },
-        "heading_g3byDq": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>SHOW<\/strong>",
-            "heading_size": "h1"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "詳細",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "heading_HH8LAh",
-        "heading_g3byDq",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/1706103945422-homepagecorpoonedesktopnoparallaxe5jpg.webp",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "image_banner_MByhNj": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_KbRAPM": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>ファッション<\/strong>",
-            "heading_size": "h2"
-          }
-        },
-        "heading_9mA33J": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>2024年春夏 プレコレクション<\/strong>",
-            "heading_size": "h1"
-          }
-        },
-        "buttons_Y8c9qc": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "詳細",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_KbRAPM",
-        "heading_9mA33J",
-        "buttons_Y8c9qc"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/1705337605766-homepagecorpoonedesktop26jpg.webp",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "image_banner_parallax_A3BbRc": {
       "type": "image-banner-parallax",
       "blocks": {
@@ -140,8 +36,6 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/1706103945422-homepagecorpoonedesktopnoparallaxe5jpg.webp",
-        "parallax_speed": 0.3,
-        "scale": 1.2,
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -190,8 +84,6 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/1705337605766-homepagecorpoonedesktop26jpg.webp",
-        "parallax_speed": 0.7,
-        "scale": 1.7,
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -206,8 +98,6 @@
     }
   },
   "order": [
-    "image_banner",
-    "image_banner_MByhNj",
     "image_banner_parallax_A3BbRc",
     "image_banner_parallax_TmpBfp"
   ]
