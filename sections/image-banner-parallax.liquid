@@ -174,10 +174,10 @@
       banners.forEach((banner, index) => {
         const rect = banner.getBoundingClientRect();
         const scrolled = window.innerHeight - rect.bottom;
-        const scale = 1;
+        const scale = 1.2;
 
         console.log('yay', scrolled);
-        const parallaxSpeed = 1; // Adjust for desired effect intensity
+        const parallaxSpeed = 0.4; // Adjust for desired effect intensity
 
         // Only apply effect if the banner is in the viewport
         if (rect.top < window.innerHeight && rect.bottom > 0) {
