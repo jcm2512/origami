@@ -280,32 +280,6 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const banners = document.querySelectorAll('.banner--parallax');
-
-        const applyParallaxEffect = () => {
-          banners.forEach((banner, index) => {
-            const rect = banner.getBoundingClientRect();
-            const scrolled = window.innerHeight - rect.bottom;
-            const scale = 1;
-
-            console.log(index, scrolled);
-            const parallaxSpeed = 1; // Adjust for desired effect intensity
-
-            // Only apply effect if the banner is in the viewport
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
-              // Combine scale with translateY transformation, preserving the scale
-              banner.style.transform = `scale(${scale}) translateY(${scrolled * parallaxSpeed}px)`;
-            }
-          });
-        };
-
-        window.addEventListener('scroll', applyParallaxEffect);
-        applyParallaxEffect(); // Apply once on load in case the banner is already in view
-      });
-    </script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
