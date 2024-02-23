@@ -168,6 +168,9 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+    // Check if the parallax event listener has already been added
+    if (window.parallaxAdded) return;
+
     const scale = {{ settings.parallax_image_scale | json }};
     const parallaxSpeed = {{ settings.parallax_speed | json }};
   
@@ -186,6 +189,9 @@
   
     window.addEventListener('scroll', applyParallaxEffect);
     applyParallaxEffect();
+
+    // Mark that the parallax event listener has been added
+    window.parallaxAdded = true;
   });
 </script>
 
