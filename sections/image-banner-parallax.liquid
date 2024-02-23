@@ -168,25 +168,24 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+    const scale = {{ settings.parallax_image_scale | json }};
+    const parallaxSpeed = {{ settings.parallax_speed | json }};
+  
     const banners = document.querySelectorAll('.banner--parallax');
-    const scale = {{ section.settings.scale | json }};
-    const parallaxSpeed = {{ section.settings.parallax_speed | json }};
-
+    
     const applyParallaxEffect = () => {
-      banners.forEach((banner, index) => {
+      banners.forEach(banner => {
         const rect = banner.getBoundingClientRect();
         const scrolled = window.innerHeight - rect.bottom;
-
-        // Only apply effect if the banner is in the viewport
+  
         if (rect.top < window.innerHeight && rect.bottom > 0) {
-          // Combine scale with translateY transformation, preserving the scale
           banner.style.transform = `scale(${scale}) translateY(${scrolled * parallaxSpeed}px)`;
         }
       });
     };
-
+  
     window.addEventListener('scroll', applyParallaxEffect);
-    applyParallaxEffect(); // Apply once on load in case the banner is already in view
+    applyParallaxEffect();
   });
 </script>
 
@@ -209,26 +208,6 @@
       "id": "image_2",
       "label": "t:sections.image-banner-parallax.settings.image_2.label"
     },
-
-    {
-      "type": "range",
-      "id": "parallax_speed",
-      "label": "Parallax Speed",
-      "min": 0,
-      "max": 1,
-      "step": 0.1,
-      "default": 0.3
-    },
-    {
-      "type": "range",
-      "id": "scale",
-      "label": "Image Scale",
-      "min": 1,
-      "max": 2,
-      "step": 0.1,
-      "default": 1.2
-    },
-
     {
       "type": "range",
       "id": "image_overlay_opacity",

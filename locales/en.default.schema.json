@@ -243,6 +243,17 @@
         }
       }
     },
+    "parallax": {
+      "name": "Parallax",
+      "settings": {
+        "parallax_speed": {
+          "label": "Paralax Speed"
+        },
+        "image_scale": {
+          "label": "Image Scale"
+        }
+      }
+    },
     "social-media": {
       "name": "Social media",
       "settings": {
