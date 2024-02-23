@@ -169,15 +169,13 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const banners = document.querySelectorAll('.banner--parallax');
+    const scale = {{ section.settings.scale | json }};
+    const parallaxSpeed = {{ section.settings.parallax_speed | json }};
 
     const applyParallaxEffect = () => {
       banners.forEach((banner, index) => {
         const rect = banner.getBoundingClientRect();
         const scrolled = window.innerHeight - rect.bottom;
-        const scale = 1.2;
-
-        console.log('yay', scrolled);
-        const parallaxSpeed = 0.4; // Adjust for desired effect intensity
 
         // Only apply effect if the banner is in the viewport
         if (rect.top < window.innerHeight && rect.bottom > 0) {
@@ -211,6 +209,28 @@
       "id": "image_2",
       "label": "t:sections.image-banner-parallax.settings.image_2.label"
     },
+
+    {
+      "type": "range",
+      "id": "parallax_speed",
+      "label": "Parallax Speed",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.3,
+      "unit": "factor"
+    },
+    {
+      "type": "range",
+      "id": "scale",
+      "label": "Image Scale",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "default": 1.2,
+      "unit": "factor"
+    },
+
     {
       "type": "range",
       "id": "image_overlay_opacity",
