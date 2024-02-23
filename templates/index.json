@@ -37,7 +37,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/1706103945422-homepagecorpoonedesktopnoparallaxe5jpg.webp",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "small",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
