@@ -286,17 +286,18 @@
         const banners = document.querySelectorAll('.banner--parallax');
 
         const applyParallaxEffect = () => {
-          banners.forEach((banner) => {
+          banners.forEach((banner, index) => {
             const rect = banner.getBoundingClientRect();
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const bannerTop = rect.top + scrollTop;
-            const scrolled = scrollTop - bannerTop;
-            const parallaxSpeed = 0.2; // Adjust for desired effect intensity
+            const scrolled = window.innerHeight - rect.bottom;
+            const scale = 1;
+
+            console.log(index, scrolled);
+            const parallaxSpeed = 1; // Adjust for desired effect intensity
 
             // Only apply effect if the banner is in the viewport
             if (rect.top < window.innerHeight && rect.bottom > 0) {
               // Combine scale with translateY transformation, preserving the scale
-              banner.style.transform = `scale(1.2) translateY(${scrolled * parallaxSpeed}px)`;
+              banner.style.transform = `scale(${scale}) translateY(${scrolled * parallaxSpeed}px)`;
             }
           });
         };

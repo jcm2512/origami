@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Shopify Theme",
   "scripts": {
+    "login": "shopify theme dev --store loulou-dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joseph Magalotti",

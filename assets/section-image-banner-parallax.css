@@ -481,3 +481,12 @@
     color: currentColor;
   }
 }
+
+.banner--parallax {
+  /* Apply a scale transform directly in CSS */
+  transition: transform 0.1s ease-out; /* Smooths out the transition of the transform changes */
+}
+
+.banner--parallax-container {
+  overflow: hidden;
+}
